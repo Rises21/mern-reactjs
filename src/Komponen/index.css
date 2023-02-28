@@ -1,0 +1,119 @@
+
+a:hover{/* ALL {a} ELEMENT */
+    color: #caeaff;
+}
+
+/*>>>>> STYLE FOR Button.jsx>>>>>*/
+#navbarSupportedContent ul li{
+    margin: 2px;
+}
+
+#Home, #AboutMe{
+    font-weight: bold;
+    min-width: 120px;
+    width: 100%;
+    background-color: #06283D;
+    border-color: #caeaff;
+    color: #73d7ff;
+}
+
+#Home{
+    border-radius: 20px 5px 5px 20px;
+}
+
+#AboutMe{
+    border-radius: 5px 20px 20px 5px;
+}
+
+#Home:hover, #AboutMe:hover{
+    min-width: 120px;
+    width: 100%;
+    background-color: #205295;
+    border-color: #DFF6FF;
+    color: #fafafa;
+    transition: 0.3s;
+}
+
+#Home:focus, #AboutMe:focus{
+    background-color: #205295;
+}
+/*<<<<<< STYLE FOR Button.jsx<<<<*/
+
+/*>>>>> STYLE FOR Header.jsx>>>>>*/
+.navbar{
+    padding: 8px;
+    background: linear-gradient( #dbdbdb,rgba(0, 0, 0, 0.2), #fafafa, rgba(0, 0, 0, 0.2), #dbdbdb );
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2) ;
+}
+
+.navbar-brand{
+   font-size: 2em;
+    margin-left: 10%;
+    font-variant: small-caps;
+}
+
+.navbar-brand::first-letter{
+    font-size: 125%;
+    color: #1f6cd0;
+    text-shadow: 0 0 4PX #73d7ff;
+}
+/*<<<<<< STYLE FOR Header.jsx<<<<*/
+
+/*>>>>> STYLE FOR Home.jsx>>>>>*/
+#imageHome{
+    position: relative;
+}
+
+.imgBar{
+    position: absolute;
+    top: 90px;
+    left: 510px;
+    height: 420px;
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.imgBar:first-child{
+    
+    border-top: dashed 25px ;
+    border-left: dashed 25px ;
+}
+
+.imgBar:last-child{
+    border-bottom: dashed 25px ;
+    border-right: dashed 25px ;
+}
+
+.card{
+    box-shadow: 0 0 8px 2px inset #DFF6FF,
+                0 0 4px 2px;               
+    padding: 5px;
+    margin-top: 15px;
+}
+.card:hover{
+    transition: ease-in .2s;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 8px 2px inset #DFF6FF,
+                8px -8px 8px 2px;
+    transform: translate(-16px,16px);
+}
+/*<<<<<< STYLE FOR Home.jsx<<<<*/
+
+/*>>>>> STYLE FOR AboutMe.jsx>>>>>*/
+div.aboutContainer{
+    min-height: 100vh;
+}
+
+#skills > span > img{
+    width: 60px;
+    margin: 20px 15px;
+}
+
+/*<<<<<< STYLE FOR AboutMe.jsx<<<<*/
+
+footer{
+    margin-bottom: -30px;
+    margin-top: 30px; 
+    background: linear-gradient( #dbdbdb,rgba(0, 0, 0, 0.2), #fafafa, rgba(0, 0, 0, 0.2), #dbdbdb );
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2)   
+}
