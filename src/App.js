@@ -1,7 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import {Header, Footer, Home, AboutMe } from './Komponen/index';
+import Header from './Tugas/NewsWebsite/Header';
+import Footer from './Tugas/NewsWebsite/Footer';
+import  Homepage  from "./Tugas/index.js"; 
 import './App.css';
 
 function App() {
@@ -10,13 +12,13 @@ function App() {
     {
       path: '/',
       label: 'Home',
-      element: <Home />,
+      element: <Homepage />,
     },
-    {
-      path: '/about',
-      label: 'AboutMe',
-      element: <AboutMe />,
-    },
+    // {
+    //   path: '/about',
+    //   label: 'AboutMe',
+    //   element: <AboutMe />,
+    // },
   ]);
 
   return (
@@ -26,6 +28,7 @@ function App() {
       {rute.map( (rutes, index) => (
        <Route key={index} path={rutes.path} label={rutes.label} element={rutes.element} />
       ))}
+      
       </Routes>
     <Footer />
    </Router>
