@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import axios from "axios";
 import { useState } from "react";
-import NEWS_API_KEY_TOP_HEADLINE from "../../.env";
-import NEWS_API_KEY_EVERYTHING from "../../.env";
+import REACT_APP_NEWS_API_KEY_TOP_HEADLINE from "../../.env";
+import REACT_APP_NEWS_API_KEY_EVERYTHING from "../../.env";
 
 const SearchBar = () =>  {
 
@@ -45,7 +45,7 @@ const SearchBar = () =>  {
     useEffect(()=>{
         if (search === "") {
                 setLoading(loading = true);
-                axios.get(NEWS_API_KEY_TOP_HEADLINE)
+                axios.get(REACT_APP_NEWS_API_KEY_TOP_HEADLINE)
                 .then((res) => {
                     setNews(news = res.data.articles)
                     setLoading(loading = false)
@@ -61,7 +61,7 @@ const SearchBar = () =>  {
         }
         if (search.length > 3 ) {
                 setLoading(loading = true);
-                axios.get(NEWS_API_KEY_EVERYTHING)
+                axios.get(REACT_APP_NEWS_API_KEY_EVERYTHING)
                 .then((res) => {
                     setNews(news = res.data.articles)
                     setLoading(loading = false)
