@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import axios from "axios";
 import { useState } from "react";
-import NEWS_API_KEY_TOP_HEADLINE from "process.env";
-import NEWS_API_KEY_EVERYTHING from "process.env";
+import NEWS_API_KEY_TOP_HEADLINE from "../../.env";
+import NEWS_API_KEY_EVERYTHING from "../../.env";
 
 const SearchBar = () =>  {
 
